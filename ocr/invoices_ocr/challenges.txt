@@ -1,0 +1,8 @@
+Ogólne:
+- polskie znaki utrudniają odczyt, należy sprawdzić wszystkie możliwe kombinacje 
+- niektóre skany maja złą jakość
+- wiele PPE
+
+
+Nowa Energia:
+- zielony box sprawia, że informacje z danego wiersza są nie do odczytania

@@ -1055,6 +1055,7 @@ def pdf_recognizer(pdf_name, row, directory, file_format):
 
                     file_name = "{}{}.jpg".format(file_name, k)
                     pdf_name = file_name
+                    
             image = lines_remover(file_name)
             # create copy in case of enlarging
             image_copy = image.copy()

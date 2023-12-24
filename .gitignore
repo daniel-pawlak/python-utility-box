@@ -159,5 +159,13 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-Scraping/LinkedIn
-Scraping/jobboard
+scraping/LinkedIn
+scraping/jobboard
+ocr/documents_analyzer/UPS_OCR_UiPath.py
+
+/*.PDF
+/*.pdf
+/*.jpg
+/*.xlsx
+/Files
+poppler-23.01.0

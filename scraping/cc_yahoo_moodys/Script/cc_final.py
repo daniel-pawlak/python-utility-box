@@ -26,7 +26,6 @@ def open_file(file_name, header=0, format='excel', final=False):
             if final == False:
                 df = pd.read_excel(file_name)
             else:
-                # df = pd.read_excel(file_name, sheet_name='Weekly File (2)')
                 df = pd.read_excel(file_name, sheet_name='Weekly')
 
         else:

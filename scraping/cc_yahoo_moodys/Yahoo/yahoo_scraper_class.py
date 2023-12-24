@@ -29,7 +29,7 @@ class yahoo_scraper_class:
         new_counter = 0
 
         bag_of_useless = ['Private', 'Foreign Owned', '-', 'n/a', 'Government', 'HSE.TO','GTES', ' ARD', 'Privately held by MMJ Group Holdings Limited (MMJJF), an Austrailian-listed company.', "Gov't", 'None', 'Non-Profit', '', 'Foreign Parent-9375.T ticker?', "State Gov't",  'GPS (The GAP)', 'Tribal Government', 'Bankruptcy', 'Private Equity', 'Private?', 'Non-profit organization', 'N/a', 'Sumitomo Mitsui Trust Holdings Inc.', '532540 (India: Bombay)', 'VLVLY (TICKER)  / VOLVY (MOODYS)', '2162 (JASDAQ)', 'RCRUY (parent)', 0, 'Province of Quebec', 'UTX', 'VLVY', 'Foreign Parent', 'Goverment', 'MIK', 'private', 'Foreign', 'RTIX/SRGA', 'SAMSNG', 'SEB SA', 'HSE', 'SIE', ' ', 'VSVS', 'VOLVY', 'BRK', '\xa0', 'HINDALCO', 'Fed Owned', 'AEXAY (parent)', 'C ', 'NEMTF', 'CSGN', 'SDF', ' LH', 'NEOS', 'GAS', 'CVIA', 'FCAU', 'ETH', 'JASN', 'IEP (Parent)', 'PRSC', 'CLGX']
-        maybe_bag = ['2162 (JASDAQ)', 'RCRUY (parent)']
+       
         bag_of_empty = []
 
         for index, row in df.iterrows():
@@ -127,8 +127,7 @@ class yahoo_scraper_class:
                 df.iloc[index, 23] = df.iloc[old_index, 23]
                 df.iloc[index, 24] = df.iloc[old_index, 24]
                         
-            # if counter == 2:
-            #     break
+    
         df.to_excel('master_file_name {}.xlsx'.format(datetime.datetime.now().strftime("%d_%m_%y %H_%M_%S"), index = False))
         print("Bag of empty includes: ", bag_of_empty)
         print('Number of unique values: ', counter)
